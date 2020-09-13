@@ -19,6 +19,7 @@ answer.addEventListener("keypress", (e) => {
       checker("true");
       cor_count++;
       correct.innerText = cor_count;
+      green.innerText = answ;
     } else {
       checker("false");
       wrong_count++;
