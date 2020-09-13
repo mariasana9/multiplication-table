@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #f5f5f5;
+  font-family: 'Andika', sans-serif;
+}
+body {
+  background-color: darkslateblue;
+}
+
+section {
+  position: absolute;
+  /* background-color: whitesmoke; */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+section .task {
+  width: 450px;
+  height: 100px;
+  border-radius: 8px;
+  border: 1px solid whitesmoke;
+  background-color: whitesmoke;
+  color: darkslateblue;
+  text-align: center;
+  font-size: 55px;
+  margin: 10px auto;
+}
+.correct {
+  background-color: #6ac16a !important;
+  color: whitesmoke !important;
+  border-color: #6ac16a !important;
+}
+.wrong {
+  background-color: #f13e39 !important;
+  color: whitesmoke !important;
+  border-color: #f13e39 !important;
+}
+section input {
+  display: block;
+  width: 200px;
+  height: 70px;
+  margin: 10px auto;
+  color: darkslateblue;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 7px;
+}
+section input:active {
+  border: none;
+  /* outline: none; */
+  box-shadow: none;
+}
+section input:focus {
+  border: none;
+  /* outline: none; */
+  /* box-shadow: none; */
+}
+section .results {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  /* border: 2px solid red; */
+}
+section .results div {
+  /* float: left; */
+  justify-content: space-around;
+  width: 50%;
+  height: 50%;
+  border-right: 1px solid rgba(245, 245, 245, 0.3);
+  /* line-height: 70px; */
+  text-align: center;
+
+}
+section .results div:nth-child(3), section .results div:nth-child(4) {
+  border-right: none;
+}
+
+.correct {
+  display: block;
+  width: 200px;
+  height: 70px;
+  margin: 10px auto;
+  background: #6ac16a;
+  color: darkslateblue;
+  font-size: 40px;
+  text-align: center;
+  border-radius: 7px;
+}
+
+.title, .correct-ans, .wrong-ans {
+  font-size: 30px;
+}

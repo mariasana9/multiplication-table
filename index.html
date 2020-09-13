@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Табличка множення</title>
+  <link href="https://fonts.googleapis.com/css2?family=Andika&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <section>
+    <h1>Перевір свої знання таблички множення!</h1>
+    <div class="task"></div>
+    <p>Введи відповідь та натисни Enter</p>
+    <input type="text" id="answer"  onkeypress="return isNumberKey(event)">
+    <p class="title-correct">Правильна відповідь:</p>
+    <div class="correct"></div>
+    <div class="results">
+      <div class="title">Вірно</div>
+      <div class="correct-ans">0</div>
+      <div class="title">Не вірно</div>
+      <div class="wrong-ans">0</div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
